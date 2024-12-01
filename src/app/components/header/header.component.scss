@@ -225,32 +225,30 @@ header {
     height: auto;
 }
 
+//elementi del menu principlae
+
 #primo-ul-di-menu-orizzontale{
     width: 200px;
-}
-
-.ul-menu-2 li div ul li{
     height: 25px;
-    width: 100%;
-    background-color: #ffffff;
     margin: 2px 0 2px 0;
     font-weight: 100; /* spessore*/
-    padding: 0; 
     font-size: 12px;
+    margin: 2px 0 2px 0;
+    color: rgb(115, 115, 115);
 }
 
-.ul-menu-2 li div ul li p{
-    margin: 0;
-    color: rgb(115, 115, 115)
+#primo-ul-di-menu-orizzontale p{
+    margin: 0px 0 15px 0;
+    color: rgb(115, 115, 115);
 }
 
-.ul-menu-2 li div ul li p:hover{
+#primo-ul-di-menu-orizzontale p:first-child {
+    color: rgb(0, 0, 0); 
+    font-weight: bold;
+}
+
+#primo-ul-di-menu-orizzontale p:hover {
     color: black;
-}
-
-.ul-menu-2 li div ul li:first-child{ /*titoli del menu 2*/
-    font-weight: 600;
-    font-size: 14px;
 }
 
 /*SEARCHBAR*/

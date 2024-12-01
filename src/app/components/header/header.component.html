@@ -18,7 +18,8 @@
                 </li>
                 <li>
                     <p id="testo-menu-container1">Aiuto</p>
-                    <!-- <ul>
+                     <ul>
+                        <!-- da sostituire -->
                         <li><p>Aiuto</p></li>
                         <li><p>Stato ordine</p></li>
                         <li><p>Spedizione e consegna</p></li>
@@ -29,10 +30,10 @@
                         <li><p>Condizioni di vendita</p></li>
                         <li><p>Condizioni d'uso</p></li>
                         <li><p>Invia feedback</p></li>
-                    </ul> -->
-                    <ul *ngFor="let item of helpMenuItems">
+                    </ul> 
+                    <!-- <ul *ngFor="let item of helpMenuItems">
                         <p id="testo-menu-container1">{{ item }}</p>
-                    </ul>
+                    </ul> -->
                 </li>
                 <li>
                     <div class="lineaverticale"></div>
@@ -46,7 +47,7 @@
                 <li>
                 <p id="testo-menu-container1">Accedi</p>
                 </li>
-            </ul>
+            </ul> 
         </nav>
     </div>
     <div class="container2">
@@ -55,50 +56,29 @@
         </div>
         <nav class="nav-menu-container-2">
             <ul class="ul-menu-2">
-                <li id="menu-orizzontale-2" class="asd"><p>Novità e in evidenza</p>
+                <li id="menu-orizzontale-2" class="asd">
+                    <p>Novità e in evidenza</p>
                     <div id="div-1-menu-orizzontale-2">
                         <div id="div-2-menu-orizzontale-2">
                             <ul id="primo-ul-di-menu-orizzontale">
-                                <li>In evidenza</li>
-                                <li><p>Tutti i nuovi arrivi</p></li>
-                                <li><p>Best seller</p></li>
-                                <li><p>Member Shop</p></li>
-                                <li><p>Calendario dei lanci SNKRS</p></li>
-                                <li><p>Shop Air</p></li>
-                                <li><p>Summer of sport</p></li>
-                                <li><p>I must-have per il rientro a scuola</p></li> 
+                                <p id="testo-menu-container1" *ngFor="let item1 of primoSubMenuPrincipale">
+                                    {{ item1 }}
+                                </p>
                             </ul>
-                            <ul>
-                                <li>le icone</li>
-                                <li><p>Air Force 1</p></li>
-                                <li><p>Air Jordan 1</p></li>
-                                <li><p>Air Max</p></li>
-                                <li><p>Dunk</p></li>
-                                <li><p>Blazer</p></li>
-                                <li><p>Pegasus</p></li>
-                                <li><p>Mercurial</p></li>
+                            <ul id="primo-ul-di-menu-orizzontale">
+                                <p id="testo-menu-container1" *ngFor="let item2 of secondoSubMenuPrincipale">
+                                    {{ item2 }}
+                                </p>
                             </ul>
-                            <ul>
-                                <li>Scopri lo sport</li>
-                                <li><p>Calcio</p></li>
-                                <li><p>Running</p></li>
-                                <li><p>Basket</p></li>
-                                <li><p>Fitness</p></li>
-                                <li><p>Golf</p></li>
-                                <li><p>Tennis</p></li>
-                                <li><p>Yoga</p></li>
-                                <li><p>Danza</p></li>
-                                <li><p>Skateboard</p></li>
+                            <ul id="primo-ul-di-menu-orizzontale">
+                                <p id="testo-menu-container1" *ngFor="let item3 of terzoSubMenuPrincipale">
+                                    {{ item3 }}
+                                </p>
                             </ul>
-                            <ul>
-                                <li>Di tendenza</li>
-                                <li><p>Air Max Home</p></li>
-                                <li><p>Sneakers Y2K</p></li>
-                                <li><p>Nike Style By</p></li>
-                                <li><p>Teenager</p></li>
-                                <li><p>EasyOn</p></li>
-                                <li><p>Idee regalo Nike</p></li>
-                                <li><p>Sostenibilità</p></li>
+                            <ul id="primo-ul-di-menu-orizzontale">
+                                <p id="testo-menu-container1" *ngFor="let item4 of quartoSubMenuPrincipale">
+                                    {{ item4 }}
+                                </p>
                             </ul>
                         </div>
                     </div>
