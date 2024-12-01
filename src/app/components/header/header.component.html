@@ -2,7 +2,7 @@
     <div class="container1">
         <div class="secondo-div-container1">
             <li class="icone-container1">
-                 <img src="assets/icons/jordan.png" id="iconajordan"> <!--assets/icons/jordan.png -->
+                 <img src="assets/icons/jordan.png" id="iconajordan"> 
             </li>
             <li>
                 <img src="assets/icons/converse.png" id="iconaconverse">
@@ -18,7 +18,7 @@
                 </li>
                 <li>
                     <p id="testo-menu-container1">Aiuto</p>
-                    <ul>
+                    <!-- <ul>
                         <li><p>Aiuto</p></li>
                         <li><p>Stato ordine</p></li>
                         <li><p>Spedizione e consegna</p></li>
@@ -29,6 +29,9 @@
                         <li><p>Condizioni di vendita</p></li>
                         <li><p>Condizioni d'uso</p></li>
                         <li><p>Invia feedback</p></li>
+                    </ul> -->
+                    <ul *ngFor="let item of helpMenuItems">
+                        <p id="testo-menu-container1">{{ item }}</p>
                     </ul>
                 </li>
                 <li>

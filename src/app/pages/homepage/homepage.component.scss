@@ -1,0 +1,232 @@
+/* HERO-BANNER */
+
+#hero-banner {
+    position: relative;
+    width: 100%;
+    height: auto; 
+    z-index: 0;
+    margin-bottom: 50px;
+}
+
+#img-hero-banner {
+    position: relative; 
+    z-index: 0;
+    width: 100%;
+    height: auto;
+}
+
+#container-titolo {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    height: 40%;
+    width: 30%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#titolo{
+    color: #ffffff;
+    font-size: 37px;
+    margin: 0 0 0 60px;
+    letter-spacing: -2px;
+    width: 100%;
+    height: 25%;
+    white-space: nowrap; /*il testo non va a capo*/
+}
+
+#sottotitolo{
+    color: #ffffff;
+    margin: 7px 0 5px 60px;
+    letter-spacing: 1px;
+    width: 100%;
+    height: 20%;
+    white-space: nowrap; /*il testo non va a capo*/
+}
+
+#contenitore-bottoni{
+    display: flex; 
+    margin-left: 60px;
+}
+
+#bottoneAcquista{
+    height: 40px;
+    width: 100px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#bottoneAcquista:hover, #bottoneBambini:hover{
+    background-color: #cacacb;
+}
+
+#bottoneBambini{
+    height: 40px;
+    width: 100px;
+    background-color: #ffffff;
+    float: left;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+#bottoneBambini p, #bottoneAcquista p{
+    text-align: center;
+    font-size: large;
+    margin: 10px 0 0 0 ;
+}
+
+/*FINE HERO BANNER E BOTTONI */
+
+/*SLIDER*/
+
+section p{
+    font-size: large;
+    margin-left: 60px;
+    margin-bottom: 0;
+} 
+
+#ul-scroll-laterale1{
+    height: 620px;
+    width: 100%;
+    overflow: auto; /*aggiunge lo scroll laterale*/
+    display: flex;
+    float: left;
+    padding-left: 0;
+}
+
+#ul-scroll-laterale2{
+    height: 100%;
+    width: 100%;
+    overflow: auto; /*aggiunge lo scroll laterale*/
+    display: flex;
+    float: left;
+    padding-left: 0;
+    position: relative;
+    margin: 16px 0 16px 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+#ul-scroll-laterale2 li{
+    padding: 0;
+}
+
+#ul-scroll-laterale2 img{
+    position: relative;
+    display: flex;
+}
+
+#ul-scroll-laterale3 img{
+    position: relative;
+    display: flex;
+}
+
+.divBottoniScroll{
+    position: absolute;
+    display: flex;
+}
+
+.buttonScroll{ /*tutti i bottoni degli scroll*/
+    height: 40px;
+    width: 100px auto;
+    background-color: #ffffff;
+    float: left;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 300px 0 0 40px;
+    border: 0;
+    z-index: 1;
+    text-align: center;
+    font-size: large;
+    padding: 10px;
+    white-space: nowrap;
+} 
+
+#ul-scroll-laterale3 li div .buttonScroll{ /*posizione bottoni dello scroll 3*/
+    margin: 350px 0 0 40px;
+}
+
+.buttonScroll:hover{
+    background-color: #c0c0c0;
+}
+
+#ul-scroll-laterale2 li p{
+    font-size: large;
+    margin-left: 10px;
+}
+
+#ul-scroll-laterale3{
+    width: 100%;
+    overflow: auto; /*aggiunge lo scroll laterale*/
+    display: flex;
+    float: left;
+    padding-left: 0;
+    padding-bottom: 0;
+    position: relative;
+    margin: 5px 5px px 5px;
+}
+
+#ul-scroll-laterale3 li{
+    padding: 0;
+}
+
+.scroll-container ul li{
+    margin: 5px 5px 5px 5px;
+    width: 100%;
+    list-style-type: none;
+}
+
+.scroll-container ul li:first-child{
+    margin-left: 30px;
+}
+
+.scroll-container ul li:last-child{
+    margin-right: 30px;
+}
+
+.scroll-container ul li h4{ /*nome prodotto*/
+    margin: 5px 0 5px 5px;
+    font-size: 17px;
+}
+
+.scroll-container ul li p{
+    margin: 5px 0 5px 5px;
+    font-size: 17px;
+}
+
+.scroll-container ul li img{
+    background-color: #ffffff;
+} 
+
+.prev, .next {
+    width: 45px;
+    height: 45px;
+    background-color: #e5e5e5;
+    border-radius: 100%;
+    text-align: center;
+    border: 0;
+    float: right;
+    cursor: pointer;
+} 
+
+.prev{
+    left: -100%;
+}
+.next{
+    margin-right: 60px;
+    margin-left: 20px;
+    right: -100%;
+}
+
+.prev:hover, .next:hover {
+    background-color: #c0c0c0;
+}
+
+.img-next, .img-prev{
+    margin: 5px 0 0 0;
+}

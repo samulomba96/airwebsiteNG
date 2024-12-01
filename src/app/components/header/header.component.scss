@@ -1,120 +1,124 @@
 
 
-header { /*header che tiene i 3 container*/
+header { 
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 150px;
-}
-
-/*CONTAINER 1*/
-
-.container1 { /* contenitore 1 che sta nell header*/
     background-color: #f5f5f5; 
-    width: 100%;
-    height: 35px;
-} 
 
-.secondo-div-container1 { /* div delle icone di sinistra*/
-    float: left; 
-    height: 100%;
-    width: 50%;
-    list-style-type: none;
-    background-color: #f5f5f5;
+    /*CONTAINER 1*/
+    .container1 { 
+        width: 100%;
+        height: 35px;
+
+        .secondo-div-container1 { 
+            /* div delle icone di sinistra*/
+            float: left; 
+            height: 100%;
+            width: 50%;
+            list-style-type: none;
+
+            #iconajordan {
+                height: 18px;
+                width: 18px;
+                margin-left: 50px;
+                float: left; 
+                padding-top: 8px;
+                padding-left: 2px;
+                cursor: pointer;
+            }
+            
+            #iconaconverse {
+                height: 30px;
+                width: 30px;
+                margin-left: 25px;
+                float: left; 
+                padding-top: 3px;
+                cursor: pointer;
+            }
+        }
+
+        /*MENU*/
+        .nav-del-menu-alto-dx{ 
+            width: 50%;  
+            height: 35px;   
+            background-color: #f5f5f5;   
+            list-style-type: none;
+            float: left;
+        } 
+
+        .nav-del-menu-alto-dx ul{ 
+            height: 100%;
+            display: flex;
+            float: right;
+            list-style-type: none;
+            padding-right: 70px;
+            margin: 0;
+            font-size: 13px;
+
+            .lineaverticale{ 
+                border-right: 1px solid;
+                width: 2px;
+                height: 12px;
+                margin: 12px;
+            }
+
+            #testo-menu-container1{ 
+                height: 100%;
+                max-width: 100%;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                white-space: nowrap; /*il testo non va a capo*/
+                cursor: pointer;
+            }
+        }
+
+        .nav-del-menu-alto-dx ul li p:hover{ 
+            color: rgb(115, 115, 115);
+        }
+        
+        .nav-del-menu-alto-dx ul li ul { 
+            background-color: #ffffff;
+            position: absolute;
+            display: none;
+            padding: 0 10px 0 10px;
+            height: auto;
+            border-radius: 0 0 4% 4%;
+        }
+        
+        .nav-del-menu-alto-dx ul li:hover ul { 
+            /*scende il menu di aiuto */
+            display: block;
+            z-index: 99999;
+        }
+        
+        .nav-del-menu-alto-dx ul li ul li{
+            width: 100%;
+        } 
+        
+        .nav-del-menu-alto-dx ul li ul li:first-child{
+            font-weight: bold;
+        } 
+        
+        .nav-del-menu-alto-dx ul li ul li p{
+            font-size: 13px;
+        }  
+    } 
+
 }
 
-#iconajordan {
-    height: 18px;
-    width: 18px;
-    margin-left: 50px;
-    float: left; 
-    padding-top: 8px;
-    padding-left: 2px;
-    cursor: pointer;
-}
-
-#iconaconverse {
-    height: 30px;
-    width: 30px;
-    margin-left: 25px;
-    float: left; 
-    padding-top: 3px;
-    cursor: pointer;
-}
-
-/*MENU*/
-
-.lineaverticale{ 
-    border-right: 1px solid;
-    width: 2px;
-    height: 12px;
-    margin: 12px;
-}
-
-#testo-menu-container1{ 
-    height: 100%;
-    max-width: 100%;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    white-space: nowrap; /*il testo non va a capo*/
-    cursor: pointer;
-}
-
-.nav-del-menu-alto-dx{ 
-    width: 50%;  
-    height: 35px;   
-    background-color: #f5f5f5;   
-    list-style-type: none;
-    float: left;
-} 
-
-.nav-del-menu-alto-dx ul{ 
-    height: 100%;
-    display: flex;
-    float: right;
-    list-style-type: none;
-    padding-right: 70px;
-    margin: 0;
-    font-size: 13px;
-}
-
-.nav-del-menu-alto-dx ul li p:hover{ 
-    color: rgb(115, 115, 115);
-}
-
-.nav-del-menu-alto-dx ul li ul { 
-    background-color: #ffffff;
-    position: absolute;
-    display: none;
-    padding: 0 10px 0 10px;
-    height: auto;
-    border-radius: 0 0 4% 4%;
-}
-
-.nav-del-menu-alto-dx ul li:hover ul { /*scende il menu di aiuto */
-    display: block;
-    z-index: 99999;
-}
-
-.nav-del-menu-alto-dx ul li ul li{
-    width: 100%;
-} 
-
-.nav-del-menu-alto-dx ul li ul li:first-child{
-    font-weight: bold;
-} 
-
-.nav-del-menu-alto-dx ul li ul li p{
-    font-size: 13px;
-}  
-
-/*FINE MENU*/
 
 /*CONTAINER 2*/
 
 .container2 {
-    background-color: #ffffff;
+    // background-color: #ffffff;
+    // height: 60px;
+    // width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 60px;
     width: 100%;
 }
@@ -344,3 +348,4 @@ header { /*header che tiene i 3 container*/
     height: 55px;
     width: 100%;
 } 
+
